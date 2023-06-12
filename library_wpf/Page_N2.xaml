@@ -1,0 +1,52 @@
+﻿<Page x:Class="library_wpf.Page_N2"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:library_wpf"
+      mc:Ignorable="d" 
+      d:DesignHeight="512" d:DesignWidth="720"
+      Title="Page_N2" MinWidth="720" MinHeight="512" MaxWidth="720" MaxHeight="512">
+
+    <Grid Background="Transparent" MinWidth="720" MaxWidth="720" MinHeight="512" MaxHeight="512" Height="512" Width="720">
+        <Border CornerRadius="8" Background="White"/>
+        <Grid>
+            <Button Content="" HorizontalAlignment="Left" Margin="644,10,0,0" VerticalAlignment="Top" Width="30" Height="22" Padding="0,0,0,0" BorderThickness="0,0,0,0" Click="Button_Click_6">
+                <Button.Background>
+                    <ImageBrush ImageSource="/NN_little.png"/>
+                </Button.Background>
+            </Button>
+            <Button BorderThickness="0" HorizontalAlignment="Left" Margin="684,10,0,0" VerticalAlignment="Top" Width="26" Height="22" Click="Button_Click_5">
+                <Button.Background>
+                    <ImageBrush ImageSource="/NN_close_but.png"/>
+                </Button.Background>
+            </Button>
+
+            <Button Content="" HorizontalAlignment="Left" Margin="371,86,0,86" VerticalAlignment="Top" Width="157" Height="160" Padding="0,0,0,0" BorderBrush="{x:Null}" Click="Button_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="/N2_store.png"/>
+            </Button.Background>
+        </Button>
+
+        <Button Content="" HorizontalAlignment="Left" Margin="192,86,0,0" VerticalAlignment="Top" Padding="0,0,0,0" Width="157" Height="160" BorderBrush="{x:Null}" Click="Button_Click_1" >
+            <Button.Background>
+                <ImageBrush ImageSource="/N2_book.png"/>
+            </Button.Background>
+
+        </Button>
+        <Button Content="" HorizontalAlignment="Center" Margin="0,266,0,0" VerticalAlignment="Top" Width="157" Height="160" Padding="0,0,0,0" BorderBrush="{x:Null}" Click="Button_Click_2" >
+            <Button.Background>
+                <ImageBrush ImageSource="/N2_store.png"/>
+            </Button.Background>
+        </Button>
+        <Label Content="Книги" HorizontalAlignment="Left" Margin="213,105,0,0" VerticalAlignment="Top" Width="54" Height="22" FontFamily="Inter" FontStyle="Normal" FontSize="18" FontWeight="SemiBold" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Padding="0,0,0,0"/>
+        <Label Content="Хранилище" HorizontalAlignment="Left" Margin="303,285,0,0" VerticalAlignment="Top" Width="99" Height="21" FontFamily="Inter" FontStyle="Normal" FontSize="18" FontWeight="SemiBold" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Padding="0,0,0,0"/>
+            <Label Content="Читатели" HorizontalAlignment="Left" Margin="390,105,0,0" VerticalAlignment="Top" Width="87" Height="22" FontFamily="Inter" FontStyle="Normal" FontSize="18" FontWeight="SemiBold" VerticalContentAlignment="Center" Padding="0,0,0,0" MinWidth="7" HorizontalContentAlignment="Center"/>
+        <Button Content="Выход" FontFamily="Inter" FontStyle="Normal" FontSize="10" FontWeight="SemiBold" HorizontalAlignment="Center" VerticalAlignment="Top" Width="96" Height="32" Padding="0,0,0,0" BorderThickness="0,0,0,0" Foreground="#FF007AFF" Margin="0,449,0,0" Click="Button_Click_4">
+            <Button.Background>
+                <ImageBrush ImageSource="/N2_exitexit.png"/>
+            </Button.Background>
+        </Button>
+    </Grid>
+    </Grid>
+</Page>

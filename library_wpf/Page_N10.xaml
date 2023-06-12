@@ -1,0 +1,67 @@
+﻿<Page x:Class="library_wpf.Page_N10"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:library_wpf"
+      mc:Ignorable="d" 
+      d:DesignHeight="512" d:DesignWidth="720"
+      Title="Page_N16" WindowHeight="512" WindowWidth="720" MinWidth="720" MinHeight="512" MaxWidth="720" MaxHeight="512">
+
+    <Grid x:Name="BackgroundGrid">
+        <Border CornerRadius="8" Background="#EFEFF4"/>
+        <Image HorizontalAlignment="Center" Height="355.5" VerticalAlignment="Center" Width="650" Source="/N16_window.png"/>
+        <Grid x:Name="MainGrid">
+            <Label FontFamily="Inter" FontStyle="Normal" FontSize="16" FontWeight="SemiBold" Padding="0" Width="135" Height="24" Content="Список читателей" HorizontalAlignment="Left" Margin="75,118.5,0,0" VerticalAlignment="Top" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+            <Grid x:Name="TableBorderGrid" Width="580" Height="205" Background="Transparent">
+                <Border BorderThickness="1" BorderBrush="#CECECE" CornerRadius="8"/>
+                <Grid Width="580" Height="205">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <DataGrid RowStyle="{DynamicResource DataGridRowStyle1}"
+                              ColumnHeaderStyle="{DynamicResource DataGridColumnHeaderStyle1}" 
+                              CellStyle="{DynamicResource DataGridCellStyle1}" 
+                              Style="{DynamicResource DataGridStyles}"
+                              Grid.Row="1" x:Name="GridForData">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn x:Name="ReaderId" Header="ID" Binding="{Binding reader_id}" Width="40">
+                                <DataGridTextColumn.HeaderTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding}" TextWrapping="Wrap" VerticalAlignment="Top" TextAlignment="Center"/>
+                                    </DataTemplate>
+                                </DataGridTextColumn.HeaderTemplate>
+                            </DataGridTextColumn>
+                            <DataGridTextColumn x:Name="ReaderSurname" Header="Фамилия                      Имя                      Отчество" Binding="{Binding reader_name}" Width="348">
+                                <DataGridTextColumn.HeaderTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding}" TextWrapping="Wrap" VerticalAlignment="Top" TextAlignment="Center"/>
+                                    </DataTemplate>
+                                </DataGridTextColumn.HeaderTemplate>
+                            </DataGridTextColumn>
+                            <DataGridTextColumn x:Name="ReaderAge" Header="Возраст" Binding="{Binding age}" Width="70">
+                                <DataGridTextColumn.HeaderTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding}" TextWrapping="Wrap" VerticalAlignment="Top" TextAlignment="Center"/>
+                                    </DataTemplate>
+                                </DataGridTextColumn.HeaderTemplate>
+                            </DataGridTextColumn>
+                            <DataGridTextColumn x:Name="AmountOfBooks" Header="Количество книг на руках" Binding="{Binding books_amount}" Width="90">
+                                <DataGridTextColumn.HeaderTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding}" TextWrapping="Wrap" VerticalAlignment="Top" TextAlignment="Center"/>
+                                    </DataTemplate>
+                                </DataGridTextColumn.HeaderTemplate>
+                            </DataGridTextColumn>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </Grid>
+            </Grid>
+        </Grid>
+        <Button FontFamily="Inter" FontStyle="Normal" FontSize="9" FontWeight="SemiBold" Content="Вернуться назад" Width="239" Height="28" Padding="0,0,0,0" BorderThickness="0,0,0,0" Foreground="Black" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,276,0,0" Click="Button_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="/N11_but_exit.png"/>
+            </Button.Background>
+        </Button>
+    </Grid>
+</Page>

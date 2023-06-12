@@ -1,0 +1,37 @@
+﻿<Page x:Class="library_wpf.Page_N9"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:library_wpf"
+      mc:Ignorable="d" 
+      d:DesignHeight="512" d:DesignWidth="720"
+      Title="Page_N9">
+
+    <Grid Width="720" Height="512" Background="Transparent">
+        <Border CornerRadius="8" Background="#EFEFF4"/>
+        <Grid>
+            <Image HorizontalAlignment="Center" Height="238" VerticalAlignment="Center" Width="243.5" Source="/N9_window.png">
+            <Image.OpacityMask>
+                <ImageBrush ImageSource="/N3_window.png" Stretch="Fill"/>
+            </Image.OpacityMask>
+        </Image>
+        <Button Content="Добавить читателя" Foreground="White" HorizontalAlignment="Left" Margin="278,221,0,0" VerticalAlignment="Top" Width="163" Height="28" BorderBrush="{x:Null}" FontFamily="Inter" FontStyle="Normal" FontSize="9" FontWeight="SemiBold" Padding="0,0,0,0" Click="Button_Click_1">
+            <Button.Background>
+                <ImageBrush ImageSource="/N9_show.png"/>
+            </Button.Background>
+        </Button>
+        <Button Content="В главное меню" Foreground="Black" HorizontalAlignment="Left" Margin="278,301,0,0" VerticalAlignment="Top" Width="163" Height="28" BorderBrush="{x:Null}" FontFamily="Inter" FontStyle="Normal" FontSize="9" FontWeight="SemiBold" Padding="0,0,0,0" Click="Button_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="/N9_exit.png"/>
+            </Button.Background>
+        </Button>
+        <Label x:Name="label_book_N3" Content="Читатели" HorizontalAlignment="Left" Margin="278,177,0,0" VerticalAlignment="Top" Width="75" Height="24" Padding="0,0,0,0" VerticalContentAlignment="Center" FontFamily="Inter" FontStyle="Normal" FontSize="16" FontWeight="SemiBold"/>
+        <Button Content="Просмотр списка читателей" Foreground="White" HorizontalAlignment="Left" Margin="278,259,0,0" VerticalAlignment="Top" Width="163" Height="28" BorderBrush="{x:Null}" FontFamily="Inter" FontStyle="Normal" FontSize="9" FontWeight="SemiBold" Padding="0,0,0,0" Click="Button_Click_2">
+            <Button.Background>
+                <ImageBrush ImageSource="/N9_add.png"/>
+            </Button.Background>
+        </Button>
+        </Grid>
+    </Grid>
+</Page>

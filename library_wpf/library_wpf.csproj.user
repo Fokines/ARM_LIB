@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="DataEditStatus.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="GiveOutBook.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="MessageWrongData.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Page_N1.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Page_N10.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Page_N11.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Page_N12.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Page_N13.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Page_N16.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Page_N2.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Page_N3.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Page_N4.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Page_N5.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Page_N6.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Page_N7.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Page_N8.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Page_N9.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="WpfMessagebox.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="DataEditStatus.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="DataGridStyles.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="GiveOutBook.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MessageWrongData.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Page_N1.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Page_N10.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Page_N11.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Page_N12.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Page_N13.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Page_N16.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Page_N2.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Page_N3.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Page_N4.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Page_N5.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Page_N6.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Page_N7.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Page_N8.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Page_N9.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="WpfMessagebox.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>
